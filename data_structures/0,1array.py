@@ -8,8 +8,6 @@ def sort_01(arr):
     for i in range(n):
         if arr[i] == 0:
             x += 1
-
-    for i in range(n):
         if arr[i] == 1:
             y += 1
 

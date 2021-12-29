@@ -17,7 +17,7 @@ root.columnconfigure(0, weight=1)
 new_frame = ttk.Frame(root, padding=(10, 0))
 new_frame.grid(row=0, column=0)
 
-image = Image.open("Capture.PNG").resize((750,450))
+image = Image.open("Capture.PNG").resize((750, 450))
 photo = ImageTk.PhotoImage(image)
 label = ttk.Label(new_frame, image=photo, padding=5, compound="top")
 label.grid(row=0, column=0)

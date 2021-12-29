@@ -20,7 +20,7 @@ class CircularlyLinkedList:
             while cur.next != self.head:
                 cur = cur.next
             cur.next = new_node
-            new_node.next = self.head
+            self.head = cur.next
 
     def append(self, data):
         if self.head is None:
@@ -42,7 +42,6 @@ class CircularlyLinkedList:
             if val == self.head:
                 print(new_str)
                 break
-
         pass
 
 
